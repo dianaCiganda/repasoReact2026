@@ -1,9 +1,24 @@
-import React from 'react'
+import './Cards.css'
 
-function Cards() {
+export interface CardProps {
+name: string,
+bio: string,
+image: string,
+skills: string[],
+id?: number;
+}
+
+
+function Card({ name, bio, image,skills, id}: CardProps) {
+
 return (
-    <div>Cards</div>
+    <div className="card">
+    <h2>{name}</h2>
+    <p>{bio}</p>
+    <img src={image} alt="" />
+    <p>{skills}</p>
+    </div>
 )
 }
 
-export default Cards
+export default Card
