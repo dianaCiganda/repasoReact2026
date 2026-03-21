@@ -28,7 +28,7 @@ return (
         <div className='cards-container'>
     {(users.length > 0) && users.map(user => (
         <Card key={user.id} name={user.name} bio={user.bio}  image={user.image}skills={user.skills} />
-    ))}
+    ))} 
     </div>
     </main>
 )

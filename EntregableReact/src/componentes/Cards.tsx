@@ -17,7 +17,9 @@ return (
     <h2>{name}</h2>
     <p>{bio}</p>
     <img src={image} alt="" />
-    <p>{skills}</p>
+    <p>
+  {skills.join(" - ")}
+</p>
     </div>
     
 )
