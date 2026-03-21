@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import Header from "./componentes/header"
+import Header from "./componentes/Header"
 import Button from "./componentes/Button"
-import Cards from "./componentes/cards"
+import Cards from "./componentes/Cards"
 
-import './App.css'
+
 
 function App() {
 
