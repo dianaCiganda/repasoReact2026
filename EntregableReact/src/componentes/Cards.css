@@ -7,6 +7,8 @@
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
+  margin-top: 30px;
+
 }
 
 /* 🔥 Hover (efecto lindo) */
@@ -49,4 +51,10 @@
   padding: 5px;
   border-radius: 5px;
   font-size: 13px;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
