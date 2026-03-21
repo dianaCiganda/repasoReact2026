@@ -12,12 +12,14 @@ id?: number;
 function Card({ name, bio, image,skills, id}: CardProps) {
 
 return (
+    
     <div className="card">
     <h2>{name}</h2>
     <p>{bio}</p>
     <img src={image} alt="" />
     <p>{skills}</p>
     </div>
+    
 )
 }
 
