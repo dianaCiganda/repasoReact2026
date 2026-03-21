@@ -1,8 +1,13 @@
-import React from 'react'
+import './Button.css'
+interface BotonProps{
+    texto:string
+}
 
-function Button() {
+function Button({texto}:BotonProps) {
 return (
-    <div>Button</div>
+    <button className='estiloBoton'>
+        {texto}
+    </button>
 )
 }
 
