@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import Card from "./componentes/Cards";
 import './main'
 import "./componentes/Cards.css"
+import "./App.css"
 
 
 function MainApi() {
@@ -24,7 +25,18 @@ useEffect(() => {
 }, [])
 
 return (
+
     <main className="main">
+             <div className="inicio-container">
+      <h1 className="titulo">
+        Tiempo Solidario
+      </h1>
+
+      <p className="subtitulo">
+    Conectando corazones, transformando realidades ✨ <br />    
+    Somos un equipo comprometido con el cambio social
+      </p>
+    </div>
         <div className='cards-container'>
     {(users.length > 0) && users.map(user => (
         <Card key={user.id} name={user.name} bio={user.bio}  image={user.image}skills={user.skills} />

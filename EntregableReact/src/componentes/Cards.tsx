@@ -9,7 +9,7 @@ id?: number;
 }
 
 
-function Card({ name, bio, image,skills, id}: CardProps) {
+function Card({ name, bio, image,skills}: CardProps) {
 
 return (
     

@@ -1,0 +1,59 @@
+.acerca-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  background: linear-gradient(135deg, #1a1a1a, #2b2b2b);
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  color: #f5f5f5;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.acerca-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #d4af37; /* dorado suave */
+  letter-spacing: 1px;
+}
+
+.acerca-container p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+/* Línea decorativa */
+.acerca-container::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #d4af37;
+  margin: 0 auto 25px auto;
+  border-radius: 2px;
+}
+
+/* Efecto suave al pasar el mouse */
+.acerca-container:hover {
+  transform: scale(1.01);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 35px rgba(212, 175, 55, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .acerca-container {
+    padding: 25px;
+    margin: 30px 15px;
+  }
+
+  .acerca-container h1 {
+    font-size: 2rem;
+  }
+
+  .acerca-container p {
+    font-size: 1rem;
+  }
+}
