@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 import Boton from "./Button";
-import "./Button.css";
+import "./Header.css";
 
-function Header() {
+type Props = {
+  setSearchTerm: (value: string) => void;
+};
+
+function Header({ setSearchTerm }: Props) {
   return (
     <header className="navbar">
       <ul>
@@ -24,6 +28,14 @@ function Header() {
           </Link>
         </li>
       </ul>
+
+      {/* 🔍 BUSCADOR */}
+      <input
+        type="text"
+        className="buscador"
+        placeholder="Buscar integrante..."
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
     </header>
   );
 }
