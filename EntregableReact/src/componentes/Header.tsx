@@ -10,7 +10,7 @@ function Header({ setSearchTerm }: Props) {
   return (
     <header className="navbar">
       <ul>
-        <li>
+        <li> {/* son los links a las diferentes paginas */}
           <Link to="/">
             <Boton texto="Inicio" />
           </Link>

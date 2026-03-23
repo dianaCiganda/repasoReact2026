@@ -10,9 +10,9 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Header setSearchTerm={setSearchTerm} />
+      <Header setSearchTerm={setSearchTerm} /> {/* buscador*/}
 
-      <Routes>
+      <Routes>  {/*estas don las rutas a las diferentes paginas */}
         <Route path="/" element={<MainApi searchTerm={searchTerm} />} />
         <Route path="/about" element={<AcercaDe />} />
         <Route path="/contact" element={<Contacto />} />

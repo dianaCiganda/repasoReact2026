@@ -3,7 +3,7 @@ interface BotonProps{
     texto:string
 }
 
-function Button({texto}:BotonProps) {
+function Button({texto}:BotonProps) { {/* declaramos una intefaz para los distintos botones */}
 return (
     <button className='estiloBoton'>
         {texto}
