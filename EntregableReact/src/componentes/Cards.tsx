@@ -1,6 +1,5 @@
 import './Cards.css'
-
-export interface CardProps {
+export interface CardProps { //creamos un interfaz para los tipos de datos
 name: string,
 bio: string,
 image: string,
@@ -9,7 +8,7 @@ id?: number;
 }
 
 
-function Card({ name, bio, image,skills}: CardProps) {
+function Card({ name, bio, image,skills}: CardProps) { //pasamos como prop los datos que son las claves de la Api
 
 return (
     
@@ -18,7 +17,7 @@ return (
     <p>{bio}</p>
     <img src={image} alt="" />
     <p>
-  {skills.join(" - ")}
+  {skills.join(" - ")}   {/* para separar las habilidades con un guion medio */}
 </p>
     </div>
     
